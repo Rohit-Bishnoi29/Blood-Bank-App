@@ -17,6 +17,8 @@ app.use(cors());
 // routes
 app.use("/api/v1/auth", require("./routes/authRoutes"));
 app.use("/api/v1/test", require("./routes/testRoute"));
+app.use("/api/v1/inventory", require("./routes/inventoryRoutes"));
+//listen
 app.listen(PORT, () => {
     console.log(`server is running in ${process.env.DEV_MODE} on port ${PORT} `)
 })
